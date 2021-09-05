@@ -1,7 +1,7 @@
 import secrets
 
 class Config(object):
-    encrypt_key = secrets.token_hex(16)
+    SECRET_KEY = secrets.token_hex(16)
 
     MONGODB_SETTINGS = {
                             'db': 'userdata',
